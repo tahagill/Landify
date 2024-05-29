@@ -3,11 +3,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-p{
+p {
   font-size: 16px;
   font-weight: 400;
 }
-h2,h3{
+h2,
+h3 {
   font-weight: 800;
   font-size: 35px;
 }
@@ -28,13 +29,12 @@ body {
   justify-content: space-between;
 
   padding: 10px 20px;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
 .left-navbar {
   display: flex;
-  flex-wrap: wrap;
+
   gap: 10px;
 }
 
@@ -42,7 +42,6 @@ body {
   display: flex;
   list-style: none;
   gap: 30px;
-  flex-wrap: wrap;
 }
 .select-tag {
   border: none;
@@ -53,7 +52,6 @@ body {
 
 .right-navbar {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
 }
 .hero-container {
@@ -197,19 +195,22 @@ body {
 
 .right-stats-top {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
 .right-stats-bottom {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 .right-stats {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
+  gap: 40px;
+  align-content: center;
+  align-items: center;
 }
 
 .headline-section {
@@ -224,9 +225,8 @@ body {
 .mobile-img-container {
   width: fit-content;
   height: fit-content;
-  
 }
-.mobile-img-container img{
+.mobile-img-container img {
   width: 540px;
   height: 540px;
 }
@@ -253,8 +253,9 @@ body {
 
 .fashion-text {
   font-size: 25px;
+  align-content: center;
 }
-.fashion-bottom{
+.fashion-bottom {
   padding-bottom: 40px;
 }
 .nexus-section {
@@ -271,7 +272,7 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.nexus-left-b-02{
+.nexus-left-b-02 {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -328,5 +329,64 @@ body {
 
 .footer-section {
   justify-content: space-around;
-  
+}
+
+@media screen and (max-width: 940px) {
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 630px) {
+  .select-tag {
+    display: none;
+  }
+  .fashion-top {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .navlink,
+  .left-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .right-navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero-title {
+    font-size: 45px;
+  }
+  h2,
+  h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .testimonial-text {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .stats-section {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 380px) {
+  .left-stats-text {
+    font-size: 25px;
+  }
+  .left-stats {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .mobile-img {
+    display: none;
+  }
 }
